@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RPG CHARACTER</title>
+  <link href="css/bootstrap.min.css" media="all" rel="stylesheet" />
+  <link href="css/main.css" media="all" rel="stylesheet" />
+</head>
+
+<body>
+
+<header class='navbar navbar-inverse'>
+  <div>
+    <h1 id="mainTitle" class='container'>RPG CHARACTER MAKER</h1>
+  </div>
+</header>
+
+<div class='container col-sm-6'>
+  <div id='basicArea' class='col-xs-12'>
+    <div>
+      <legend>Basic</legend>
+        <fieldset class='col-xs-4'>
+          <div class='form-group'>
+            <input type='text' value='Enter name' class'form-control' id='nameInput'>
+          </div>
+        </fieldset>
+        <div class='form-group col-xs-4'>
+          <select class='form-control'>
+            <option value='Pick race'>Pick race</option>
+            <option value='blasian'>blasian</option>
+            <option value='dragon'>dragon</option>
+            <option value='diva'>diva</option>
+            <option value='pie'>pie</option>
+          </select>
+        </div>
+        <div class='col-xs-4'>
+          <div class='form-group'>
+          <select class='form-control'>
+            <option value='Pick trait'>Pick trait</option>
+            <option value='sensitive'>sensitive</option>
+            <option value='horny'>horny</option>
+            <option value='philosophical'>philosophical</option>
+            <option value='confused'>confused</option>
+          </select>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id='portraitArea' class='col-xs-12'>
+    <fieldset>
+      <legend>Portrait Select</legend>
+    </fieldset>
+    <div id='carousel' class='carousel slide' data-ride='carousel'>
+      <div class='carousel-inner'>
+        <div class='active item'>
+          <img src='images/character1.png' id='character1' class='center-block' alt='image1'>
+        </div>
+        <div class='item'>
+          <img src='images/character2.png' id='character2' class='center-block' alt='image2'>
+        </div>
+        <div class='item'>
+          <img src='images/character3.png' id='character3' class='center-block' alt='image3'>
+        </div>
+        <div class='item'>
+          <img src='images/character4.png' id='character4' class='center-block' alt='image4'>
+        </div>
+        <div class='item'>
+          <img src='images/character5.png' id='character5' class='center-block' alt='image5'>
+        </div>
+        <div class='item'>
+          <img src='images/character6.png' id='character6' class='center-block' alt='image6'>
+        </div>
+        <div class='item'>
+          <img src='images/character7.png' id='character7' class='center-block' alt='image7'>
+        </div>
+        <div class='item'>
+          <img src='images/character8.png' id='character8' class='center-block' alt='image8'>
+        </div>
+        <div class='item'>
+          <img src='images/character9.png' id='character9' class='center-block' alt='image9'>
+        </div>
+        <div class='item'>
+          <img src='images/character10.png' id='character10' class='center-block' alt='image10'>
+        </div>
+      </div>
+      <div>
+        <a class='carousel-control left' role='button' href='#carousel' data-slide='prev'><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class='carousel-control right' role='button' href='#carousel' data-slide='next'><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container col-sm-6'>
+  <fieldset id='mapArea'>
+    <legend id='regionName' class='col-xs-12'>Choose Region</legend>
+    <img id='map' src='images/map.jpg' class='container col-xs-12'>
+      <div id='mainRegion1'></div>
+        <div id='region1'></div>
+          <p id='labelRegion1'>Eyjafjallajokull <br>Mountain Region</br></p>
+      <div id='mainRegion2'></div>
+        <div id='region2'></div>
+          <p id='labelRegion2'>Flat Stuff Region</br></p>
+      <div id='mainRegion3'></div>
+        <div id='region3'></div>
+          <p id='labelRegion3'>Whatever Region</br></p>
+      <div id='mainRegion4'></div>
+        <div id='region4'></div>
+          <p id='labelRegion4'>No One Wants <br>To Live Here Region</br></p>
+      <div id='mainRegion5'></div>
+        <div id='region5'></div>
+          <p id='labelRegion5'>No Friends Valley Region</p>
+  </fieldset>
+  <button id='createBtn' class='btn btn-primary col-xs-offset-4'>Create Character</button>
+</div>
+
+<div id='lightBox' class='container'></div>
+<div id='lightBoxContent' class='container'>
+  <p>yup.</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src='js/main.js'></script>
+</body>
+
+</html>
